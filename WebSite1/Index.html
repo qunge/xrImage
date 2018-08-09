@@ -5,116 +5,58 @@
     <title></title>
 	<meta charset="utf-8" />
     <script src="Script/Jquery-3.3.1.js"></script>
-    <script src="Script/Index.js"></script>
-    <link href="Css/Index.css" rel="stylesheet" />
+    <style>
+        .box {
+            width: 300px;
+            margin: auto;
+        }
+
+        .item {
+            float: left;
+            margin-left: 50px;
+            margin-top: 50px;
+            background-color: #009688;
+            padding: 10px;
+            cursor:pointer;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $(".item").click(function () {
+                var text = $(this).text();
+                switch (text)
+                {
+                    case "家寻亲人":
+                        window.location.href = "jxqr.html";
+                        break;
+                    case "亲人寻家":
+                        window.location.href = "qrxj.html";
+                        break;
+                    case "感恩寻人":
+                        break;
+                    case "寻找老友":
+                        break;
+                    case "战友情深":
+                        break;
+                    case "台海寻亲":
+                        break;
+                    case "其他寻人":
+                        break;
+                }
+            })
+        })
+    </script>
 </head>
 <body>
-    <div>
-        <div class="left">
-            <div id="div_title">寻找1980年11月17日出生约2003年下半年在广东省广州市番禺区打工失联的陈小果dzw24906</div>   <!--标题-->
-            <div class="left-content-font">
-                <div class="left-content">
-                    <div id="div_Code">编号：dzw24906</div>  <!--编号-->
-                    <div id="div_Type">类型：家寻亲人</div>  <!--类型-->
-                    <div id="div_Name">被寻人真是姓名：陈小果</div>  <!--被寻人真实姓名-->
-                    <div id="div_Sex">性别：男</div>  <!--性别-->
-                    <div id="div_BirthDay">出生日期：1980年11月17日（农历）</div>  <!--出生日期-->
-                    <div id="div_NativePlace">失踪人籍贯：广东省韶关市新丰县</div>  <!--失踪人籍贯-->
-                    <div id="div_BreakUpDate">失散日期：约2003年下半年</div>  <!--失散日期-->
-                    <div id="div_Height">失踪时身高：168</div>  <!--失踪时身高-->
-                    <div id="div_BreakUpAddress">失散地点：广东省广州市番禺区</div>  <!--失散地点-->
-                </div>
-                <img id="img" src="Image/221016k888tkccqjsk8q2n.png.jpg" />
-                <div style="clear:both"></div>
-                <div id="div_Feature">特征描述：两个发旋，其中一个在前额，双眼皮，高鼻梁，印堂中间有一伤痕，肋部处有一斜伤疤（记不清左侧还是右侧了）</div>  <!--特征描述-->
-                <div id="div_FamilyInfo">家庭信息：家住广东省韶关市新丰县，家里有父母，三个妹妹，一个弟弟。</div>  <!--家庭信息-->
-                <div id="div_After">失踪经过：约2002年9月份被寻人陈小果前往广东省广州市白云区一家餐厅打工，后随女朋友去往广东省广州市番禺区，约2003年下半年家人和陈小果失去联系，至今没有音讯</div>  <!--失踪经过-->
-            </div>
-            <div class="bottom">
-                请大家转发到QQ空间、微信朋友圈、各群及相关论坛。<br />
-                您的每一次转发都给他们回家带来一份希望，谢谢 ！！！<br />
-                如有线索提供，请直接联系本案例跟进志愿者<label class="gjzyz">山东涅炎</label>
-            </div>
-            <div>
-                <label class="lb_phone bottom">手机号码：15054160160</label>
-            </div>
-            <div>
-                <label class="lb_qq bottom">QQ：1274683369</label>
-            </div>
-            <div>
-                <label class="lb_wx bottom">微信：weixin1274683369</label>
-            </div>
-        </div>
-        <div class="right">
-            <div class="selectType">
-                <label>请选择案例类别：</label>
-                <select id="stype">
-                    <option value="1" selected="selected">家寻亲人</option>
-                    <option value="2">亲人寻家</option>
-                    <option value="3">战友情深</option>
-                    <option value="4">感恩寻人</option>
-                    <option value="5">寻找老友</option>
-                    <option value="6">其他寻人</option>
-                    <option value="7">台海寻亲</option>
-                </select>
-            </div>
-            <div class="content">
-                <div class="ct">
-                    <label>标题：</label><input id="title" class="item"  type="text" />
-                </div>
-                <div class="ct">
-                    <label class="Code">编号：</label><input id="Code" class="item" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="Type">类型：</label><input id="Type" class="item" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="Name">被寻人真实姓名：</label><input id="Name" class="item" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="Sex">性别：</label><input id="Sex" class="item" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="BirthDay">出生日期：</label><input id="BirthDay" class="item" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="NativePlace">失踪人籍贯：</label><input id="NativePlace" class="item" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="BreakUpDate">失散日期：</label><input id="BreakUpDate" class="item" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="Height">失踪时身高：</label><input id="Height" class="item" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="BreakUpAddress">失散地点：</label><input id="BreakUpAddress" class="item" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="Feature">特征描述：</label><input id="Feature" class="item" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="FamilyInfo">家庭信息：</label><input id="FamilyInfo" class="item" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="After">失踪经过：</label><input id="After" class="item" type="text" />
-                </div>
-                <div class="ct">
-                    <label>跟进志愿者：</label><input id="gjzyz" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="phone">手机号码：</label><input id="phone" class="LinkType" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="qq">QQ：</label><input id="qq" class="LinkType" type="text" />
-                </div>
-                <div class="ct">
-                    <label class="wx">微信：</label><input id="wx" class="LinkType" type="text" />
-                </div>
-                <div class="ct">
-                    <label>上传图片：</label><input type="file" id="uploadImg"  onchange="changepic(this)" accept="image/*" />
-                </div>
-            </div>
-        </div>
+    <div class="box">
+        <h1 style="margin-left:40px">请选择案例类别</h1>
+        <div class="item">家寻亲人</div>
+        <div class="item">亲人寻家</div>
+        <div class="item">感恩寻人</div>
+        <div class="item">寻找老友</div>
+        <div class="item">战友情深</div>
+        <div class="item">台海寻亲</div>
+        <div class="item">其他寻人</div>
     </div>
 </body>
 </html>

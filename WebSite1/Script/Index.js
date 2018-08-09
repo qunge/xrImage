@@ -1,9 +1,6 @@
 ﻿/// <reference path="Jquery-3.3.1.js" />
 $(function () {
-    // 添加标题
-    //$("#txt_title").change(function () {
-    //    $("#div_title").html($("#txt_title").val());
-    //});
+
 
     $(".item").bind("input propertychange", function () {
         var flg = $(this).attr("id");

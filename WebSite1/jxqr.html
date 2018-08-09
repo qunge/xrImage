@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="Script/Jquery-3.3.1.js"></script>
+    <script src="Script/Index.js"></script>
+    <link href="Css/Index.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <div class="left">
+            <div id="div_title"></div>   <!--标题-->
+            <div class="left-content-font">
+                <div class="left-content">
+                    <div id="div_Code"></div>  <!--编号-->
+                    <div id="div_Type"></div>  <!--类型-->
+                    <div id="div_Name"></div>  <!--被寻人真实姓名-->
+                    <div id="div_Sex"></div>  <!--性别-->
+                    <div id="div_BirthDay"></div>  <!--出生日期-->
+                    <div id="div_NativePlace"></div>  <!--失踪人籍贯-->
+                    <div id="div_BreakUpDate"></div>  <!--失散日期-->
+                    <div id="div_Height"></div>  <!--失踪时身高-->
+                    <div id="div_BreakUpAddress"></div>  <!--失散地点-->
+                </div>
+                <img id="img" src="Image/timg.jpg" />
+                <div style="clear:both"></div>
+                <div class="bottom-content">
+                    <div id="div_Feature"></div>  <!--特征描述-->
+                    <div id="div_FamilyInfo"></div>  <!--家庭信息-->
+                    <div id="div_After"></div>  <!--失踪经过-->
+                </div>
+            </div>
+            <div class="bottom">
+                请大家转发到QQ空间、微信朋友圈、各群及相关论坛。<br />
+                您的每一次转发都给他们回家带来一份希望，谢谢 ！！！<br />
+                如有线索提供，请直接联系本案例跟进志愿者<label class="gjzyz"></label>
+            </div>
+            <div>
+                <label class="lb_phone bottom"></label>
+            </div>
+            <div>
+                <label class="lb_qq bottom"></label>
+            </div>
+            <div>
+                <label class="lb_wx bottom"></label>
+            </div>
+        </div>
+        <div class="right">
+            <div class="content">
+                <div class="ct">
+                    <label>标题：</label><input id="title" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="Code">编号：</label><input id="Code" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="Type">类型：</label><input id="Type" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="Name">被寻人真实姓名：</label><input id="Name" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="Sex">性别：</label><input id="Sex" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="BirthDay">出生日期：</label><input id="BirthDay" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="NativePlace">失踪人籍贯：</label><input id="NativePlace" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="BreakUpDate">失散日期：</label><input id="BreakUpDate" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="Height">失踪时身高：</label><input id="Height" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="BreakUpAddress">失散地点：</label><input id="BreakUpAddress" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="Feature">特征描述：</label><input id="Feature" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="FamilyInfo">家庭信息：</label><input id="FamilyInfo" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="After">失踪经过：</label><input id="After" class="item" type="text" />
+                </div>
+                <div class="ct">
+                    <label>跟进志愿者：</label><input id="gjzyz" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="phone">手机号码：</label><input id="phone" class="LinkType" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="qq">QQ：</label><input id="qq" class="LinkType" type="text" />
+                </div>
+                <div class="ct">
+                    <label class="wx">微信：</label><input id="wx" class="LinkType" type="text" />
+                </div>
+                <div class="ct">
+                    <label>上传图片：</label><input type="file" id="uploadImg" onchange="changepic(this)" accept="image/*" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
